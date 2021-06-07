@@ -22,7 +22,9 @@ body {
     z-index: 1002;
     visibility: visible; }
 
-
+#map {
+      height: 100%;
+    }
 
 p {
   color: #b3b3b3;
