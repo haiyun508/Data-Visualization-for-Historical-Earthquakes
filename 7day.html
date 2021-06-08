@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Earthquake Circles</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="./map7.js"></script>
+    <style>
+        #map {
+  height: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+<!-- 
+     
+     #navbar ul { 
+      margin: 0; 
+      padding: 5px; 
+      list-style-type: none; 
+      text-align: center; 
+      background-color: #000; 
+      } 
+     
+    #navbar ul li {  
+      display: inline; 
+      } 
+    #navbar ul li i { 
+      text-decoration: none; 
+      padding: .2em 1em; 
+      color: #fff; 
+      background-color: #000; 
+      } 
+     
+    #navbar ul li a { 
+      text-decoration: none; 
+      padding: .2em 1em; 
+      color: #fff; 
+      background-color: #000; 
+      } 
+     
+    #navbar ul li a:hover { 
+      color: #000; 
+      background-color: #fff; 
+      } 
+     
+    --> 
+    </style> 
+</head>
+
+<body>
+  <div id="navbar"> 
+  <ul> 
+	<li><a href="/index.html">HOME</a></li> 
+	<li><a href="/1day.html">1-day</a></li> 
+	<li><a href="/7day.html">7-day</a></li> 
+	<li><a href="/30day.html">30-day</a></li> 
+    <li><i>(4.5+ magnitude)</i></li>
+  </ul> 
+</div> 
+    
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgrsjhf3o2nLzi1Wymf6FtmVtk0Sgp2sI&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    
+  </body>
+</html>
