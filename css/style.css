@@ -41,7 +41,9 @@ a {
   a, a:hover {
     text-decoration: none !important; }
 
-.center {
+
+
+    .center {
       margin: auto;
       width: 80%;
       border: 5px solid #FFFF00;
