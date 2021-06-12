@@ -15,6 +15,7 @@ function initMap() {
   document.getElementsByTagName("head")[0].appendChild(script);
   map.data.setStyle((feature) => {
     const magnitude = feature.getProperty("mag");
+    console.log(magnitude)
     return {
       icon: getCircle(magnitude),
     };
@@ -31,6 +32,8 @@ function getCircle(magnitude) {
     strokeWeight: 0.5,
   };
 }
+
+
 
 function eqfeed_callback(results) {
   map.data.addGeoJson(results);

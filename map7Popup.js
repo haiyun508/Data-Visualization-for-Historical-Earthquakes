@@ -24,12 +24,15 @@ const eqfeed_callback = function (results) {
   for (let i = 0; i < results.features.length; i++) {
     const coords = results.features[i].geometry.coordinates;
     const title = results.features[i].properties.title;
+    const link = results.features[i].properties.url;
+    const mag = results.features[i].properties.mag;
     const latLng = new google.maps.LatLng(coords[1], coords[0]);
     const marker = new google.maps.Marker({
       position: latLng,
       map: map,
 
     });
+    console.log(marker)
 
     map.addListener("center_changed", () => {
       });
@@ -42,8 +45,9 @@ const eqfeed_callback = function (results) {
     var infoWindow = new google.maps.InfoWindow();
 
     marker.addListener('mouseover', function () {
-      infoWindow.setContent(`<p><b>(Click on marker to zoom map)</b><br><br>
-      ${title}<br>Coords: <i>${latLng}</i><br></p><br>`);
+      infoWindow.setContent(`<p>${title}<br>Coords: <i>${latLng}</i><br>
+      <h4>Magnitude: ${mag}</h4><br><a href='${link}'><button>LINK</button></a>
+      </p>`);
       infoWindow.open(map, this);
         
       });
