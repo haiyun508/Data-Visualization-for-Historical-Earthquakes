@@ -1,0 +1,35 @@
+/* remove default margin and padding from body */
+/* body { */
+  /* padding: 10px; */
+  /* margin: 10px; */
+/* } */
+
+/* set map, body, and html to 100% of the screen size */
+#map
+/* body,
+html  */
+{
+  position:relative;
+  height: 700px;
+  width:900px
+}
+
+h1 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom:10px;
+}
+.btn {
+  /* background-color: DodgerBlue; */
+  background-color: rgb(243, 247, 241);
+  border: none;
+  stroke:red; 
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
