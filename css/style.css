@@ -22,6 +22,14 @@ body {
     z-index: 1002;
     visibility: visible; }
 
+img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+      padding-top: 10px; 
+  } 
+
 #map {
       height: 100%;
     }
