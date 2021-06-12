@@ -23,18 +23,30 @@ function initMap() {
 const eqfeed_callback = function (results) {
   for (let i = 0; i < results.features.length; i++) {
     const coords = results.features[i].geometry.coordinates;
+    const title = results.features[i].properties.title;
     const latLng = new google.maps.LatLng(coords[1], coords[0]);
     const marker = new google.maps.Marker({
       position: latLng,
       map: map,
+
     });
+
     map.addListener("center_changed", () => {
       });
       marker.addListener("click", () => {
         map.setZoom(8);
         map.setCenter(marker.getPosition());
+        
       });
 
-    
+    var infoWindow = new google.maps.InfoWindow();
+
+    marker.addListener('mouseover', function () {
+      infoWindow.setContent(`<p><b>(Click on marker to zoom map)</b><br><br>
+      ${title}<br>Coords: <i>${latLng}</i><br></p><br>`);
+      infoWindow.open(map, this);
+        
+      });
+  
   }
 };
