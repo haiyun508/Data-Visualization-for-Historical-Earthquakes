@@ -28,6 +28,7 @@ const eqfeed_callback = function (results) {
     const mag = results.features[i].properties.mag;
     const latLng = new google.maps.LatLng(coords[1], coords[0]);
     const marker = new google.maps.Marker({
+      animation: google.maps.Animation.DROP,
       position: latLng,
       map: map,
 
@@ -51,6 +52,16 @@ const eqfeed_callback = function (results) {
       infoWindow.open(map, this);
         
       });
+      marker.addListener('click', displayToggleBounce);
+    
+      function displayToggleBounce() {  
+        if (marker.getAnimation() !== null) {  
+          marker.setAnimation(null);  
+        } else {  
+          marker.setAnimation(google.maps.Animation.BOUNCE);  
+        }  
+      }  
   
   }
+  
 };
