@@ -7,7 +7,7 @@ __Project 2__
 - __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
   i18n with plurals support and easy syntax.
 
-VISIT [THIS LINK]("https://contourdesign.github.io/project-2/index.html") TO VIEW IN BROWSER INTERFACE
+VISIT [THIS LINK](https://contourdesign.github.io/project-2/index.html) TO VIEW IN BROWSER INTERFACE
 
 ---
 
