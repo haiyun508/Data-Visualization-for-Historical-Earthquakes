@@ -2,16 +2,20 @@
 ---
 __Project 2__
 
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
-  resize in browser.
-- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
-  i18n with plurals support and easy syntax.
+-=- Earthquake Mapping -=-
 
 VISIT [THIS LINK](https://contourdesign.github.io/project-2/index.html) TO VIEW IN BROWSER INTERFACE
 
 ---
 
-Description:
+### Description:
+
+- "index.html" contains a dropdown to view each Linear Regression analysis that was performed
+- DateSlider link will take you to a dynamic map that is user-controlled 
+- HeatMap link will take you to a heatmap view of Earthquake activity
+- Real-Time link will take you to real-time USGS-fed API earthquake data at 1, 7 and 30 days
+- FilterTable link will take you to a filterable table of the data, which feeds to a map
+- JSON link provides users the ability to access the data used in this project
 
 
 ---
