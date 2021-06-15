@@ -4,7 +4,7 @@ __Project 2__  -=- Earthquake Mapping -=-
 
 VISIT [THIS LINK](https://contourdesign.github.io/project-2/index.html) TO VIEW IN BROWSER INTERFACE
 
----
+![image Earthquake](https://www.safetyandhealthmagazine.com/ext/resources/images/2021/03-mar/earthquakes.jpg?1613405082)
 
 ### Description:
 
