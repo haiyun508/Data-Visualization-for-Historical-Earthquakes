@@ -1,0 +1,155 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>ArcGIS</title>
+
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    <!-- 
+     
+     #navbar ul { 
+      margin: 0; 
+      padding: 5px; 
+      list-style-type: none; 
+      text-align: center; 
+      background-color: #000; 
+      } 
+     
+    #navbar ul li {  
+      display: inline; 
+      } 
+    #navbar ul li i { 
+      text-decoration: none; 
+      padding: .2em 1em; 
+      color: #fff; 
+      background-color: #000; 
+      } 
+     
+    #navbar ul li a { 
+      text-decoration: none; 
+      padding: .2em 1em; 
+      color: #fff; 
+      background-color: #000; 
+      } 
+     
+    #navbar ul li a:hover { 
+      color: #000; 
+      background-color: #fff; 
+      } 
+    
+     
+    --> 
+    .nav .current {
+      background-color: aquamarine;
+    }
+
+  </style>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.19/esri/themes/light/main.css" />
+  <script src="https://js.arcgis.com/4.19/"></script>
+
+  <script>
+    require(["esri/Map", "esri/layers/GeoJSONLayer", "esri/views/MapView"], function (
+      Map,
+      GeoJSONLayer,
+      MapView
+    ) {
+      // If GeoJSON files are not on the same domain as your website, a CORS enabled server
+      // or a proxy is required.
+      const url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
+
+      // Attributes:
+      // * mag - magnitude
+      // * type - earthquake or other event such as nuclear test
+      // * place - location of the event
+      // * time - the time of the event
+      // Use the Arcade Date() function to format time field into a human-readable format
+
+      const template = {
+        title: "Earthquake Info",
+        content: "Magnitude {mag} {type} hit {place} on {time}",
+        fieldInfos: [
+          {
+            fieldName: 'time',
+            format: {
+              dateFormat: 'short-date-short-time'
+            }
+          }
+        ]
+      };
+
+      const renderer = {
+        type: "simple",
+        field: "mag",
+        symbol: {
+          type: "simple-marker",
+          color: "purple",
+          outline: {
+            color: "white"
+          }
+        },
+        visualVariables: [{
+          type: "size",
+          field: "mag",
+          stops: [{
+              value: 2.5,
+              size: "4px"
+            },
+            {
+              value: 8,
+              size: "40px"
+            }
+          ]
+        }]
+      };
+
+      const geojsonLayer = new GeoJSONLayer({
+        url: url,
+        copyright: "USGS Earthquakes",
+        popupTemplate: template,
+        renderer: renderer //optional
+      });
+
+      const map = new Map({
+        basemap: "gray-vector",
+        layers: [geojsonLayer]
+      });
+
+      const view = new MapView({
+        container: "viewDiv",
+        center: [-168, 46],
+        zoom: 2,
+        map: map
+      });
+    });
+
+  </script>
+</head>
+
+<body>
+  <div id="navbar"> 
+    <ul> 
+    <li><a href="/project-2/index.html">HOME</a></li> 
+    <li><a href="/project-2/1day.html">1-day</a></li> 
+    <li><a href="/project-2/7day.html">7-day</a></li> 
+    <li><a href="/project-2/30day.html">30-day</a></li>
+    <li><a href="/project-2/arcGIS.html">arcGIS</a></li>
+    <li><i> - - - </i></li>
+      <li><a href="/project-2/7dayPopup.html">7-day Popups</a></li>
+      <li><a href="/project-2/top_10.html">Top 10 Days</a></li>
+    </ul> 
+  </div> 
+  <div id="viewDiv"></div>
+</body>
+
+</html>
