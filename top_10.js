@@ -47,7 +47,7 @@ function renderChart(data) {
   return JSC.chart('chartDiv', { 
     type: 'bubble', 
     title_label_text: 
-      'Top 10 Earthquake Days since 1965', 
+      'Top 10 Most Frequent Earthquake Days since 1965', 
     legend_visible: false, 
     defaultPoint: { 
       tooltip: 
