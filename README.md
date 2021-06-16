@@ -2,6 +2,8 @@
 ---
 __Project 2__  -=- Earthquake Mapping -=-
 
+Steve Meyer, Haiyun Zhou, Jeffrey Nguyen, Sam Van de Velde
+
 VISIT [THIS LINK](https://contourdesign.github.io/project-2/index.html) TO VIEW IN BROWSER INTERFACE
 
 ![image Earthquake](https://www.safetyandhealthmagazine.com/ext/resources/images/2021/03-mar/earthquakes.jpg?1613405082)
@@ -46,3 +48,4 @@ VISIT [THIS LINK](https://contourdesign.github.io/project-2/index.html) TO VIEW 
 
 ***
 
+*Utilized JSCharts for timeline chart of top 10 Earthquake days (freq) since 1965
