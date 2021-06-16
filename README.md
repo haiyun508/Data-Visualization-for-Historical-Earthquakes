@@ -34,7 +34,7 @@ VISIT [THIS LINK](https://contourdesign.github.io/project-2/index.html) TO VIEW 
 ### 4) if earthquakes over time are getting stronger in magnitude
 &nbsp;&nbsp;&nbsp;&nbsp;A: Yes, magnitudes of earthquakes are getting stronger over time.
 
-### 5) if certain “binned” magnitudes have higher frequencies
+### 5) if certain “binned” magnitudes are increasing or decreasing over time
 &nbsp;&nbsp;&nbsp;&nbsp; A: More technologically advanced equipment means that smaller magnitude earthquakes were easier to detect. Or that smaller earthquakes are decreasing in amount over time.
 
 ## RUN INSTRUCTIONS:
