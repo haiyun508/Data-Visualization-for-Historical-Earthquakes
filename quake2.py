@@ -13,7 +13,7 @@ con = psycopg2.connect(
     host = "127.0.0.1",
     database = "earthquakes",
     user = "postgres",
-    password = "2544",
+    password = "PASSWORD-GOES-HERE",
     port="5432"
 )
 
