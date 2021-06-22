@@ -2,6 +2,8 @@
 ---
 __Project 2__  -=- Earthquake Mapping -=-
 
+Steve Meyer, Haiyun Zhou, Jeffrey Nguyen, Sam Van de Velde
+
 VISIT [THIS LINK](https://contourdesign.github.io/project-2/index.html) TO VIEW IN BROWSER INTERFACE
 
 ![image Earthquake](https://www.safetyandhealthmagazine.com/ext/resources/images/2021/03-mar/earthquakes.jpg?1613405082)
@@ -14,6 +16,7 @@ VISIT [THIS LINK](https://contourdesign.github.io/project-2/index.html) TO VIEW 
 - [Real-Time](https://contourdesign.github.io/project-2/1day.html) data of USGS-fed API earthquake data at 1, 7 and 30 days (*note: real-time maps require an API key in each of the html API calls to function)
 - [FilterTable](https://contourdesign.github.io/project-2/tinahtmlpushto/index.html) link will take you to a filterable table of the data, which feeds a map.
 - [JSON](https://contourdesign.github.io/project-2/output2.json) provides users the ability to access the data used in this project in JSON format
+- "quake2.py" contains the code for the flask app (password is not supplied)
 
 ---
 
@@ -31,7 +34,7 @@ VISIT [THIS LINK](https://contourdesign.github.io/project-2/index.html) TO VIEW 
 ### 4) if earthquakes over time are getting stronger in magnitude
 &nbsp;&nbsp;&nbsp;&nbsp;A: Yes, magnitudes of earthquakes are getting stronger over time.
 
-### 5) if certain “binned” magnitudes have higher frequencies
+### 5) if certain “binned” magnitudes are increasing or decreasing over time
 &nbsp;&nbsp;&nbsp;&nbsp; A: More technologically advanced equipment means that smaller magnitude earthquakes were easier to detect. Or that smaller earthquakes are decreasing in amount over time.
 
 ## RUN INSTRUCTIONS:
@@ -46,3 +49,4 @@ VISIT [THIS LINK](https://contourdesign.github.io/project-2/index.html) TO VIEW 
 
 ***
 
+*Utilized JSCharts for timeline chart of top 10 Earthquake days (freq) since 1965
