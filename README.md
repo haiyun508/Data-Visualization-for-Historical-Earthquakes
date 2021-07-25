@@ -20,7 +20,7 @@ VISIT [THIS LINK](https://contourdesign.github.io/project-2/index.html) TO VIEW 
 
 ---
 
-## Our group set out to take a closer look at earthquake data over the years (data ending in 2016). The data was downloaded as a .csv and imported into PgAdmin; then using PostgreSQL we queried said data and using several different methods, created displays for many different outlooks of the data. The main questions we wanted to answer were:
+### Our group set out to take a closer look at earthquake data over the years (data ending in 2016). The data was downloaded as a .csv and imported into PgAdmin; then using PostgreSQL we queried said data and using several different methods, created displays for many different outlooks of the data. The main questions we wanted to answer were:
 
 ### 1) if certain locations that were consistently hit with strong earthquakes
 &nbsp;&nbsp;&nbsp;&nbsp;A: Yes, heatmap shows that some known fault zones have very consistent earthquakes. 
@@ -39,13 +39,13 @@ VISIT [THIS LINK](https://contourdesign.github.io/project-2/index.html) TO VIEW 
 
 ## RUN INSTRUCTIONS:
 
-# *Note: you must add your own API key for mapbox to the config file.*
+## *Note: you must add your own API key for mapbox to the config file.*
 
-# Run live server and check menu for other views. 
+## Run live server and check menu for other views. 
 
-# The slider bar will auto populate graphs for the page. 
+## The slider bar will auto populate graphs for the page. 
 
-# Filter table button will filter data upwards of given input.*  
+## Filter table button will filter data upwards of given input.*  
 
 ***
 
